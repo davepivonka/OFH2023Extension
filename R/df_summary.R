@@ -10,8 +10,6 @@
 #' @examples NULL
 #' @export
 df_summary <- function(df_list) {
-  utils::globalVariables(c("match_party", "policy_type", "match_policy", "therm", "child_marry", "be_neighbor"))
-
   summarised_df_list <- list()
 
   # Makes it work even with DFs by turning them into lists
@@ -32,14 +30,14 @@ df_summary <- function(df_list) {
 
     # Get the averages and SEs. These calculations are directly from the authors of the article:
     summarised_df <- df %>%
-      dplyr::group_by(match_party, policy_type, match_policy) %>%
+      dplyr::group_by(.data$match_party, .data$policy_type, .data$match_policy) %>%
       dplyr::summarize(
-        therm_avg = round(mean(therm, na.rm = TRUE), 2),
-        therm_se = round(sd(therm, na.rm = TRUE) / sqrt(n()), 2),
-        child_marry_avg = round(mean(as.numeric(child_marry), na.rm = TRUE), 2),
-        child_marry_se = round(sd(as.numeric(child_marry), na.rm = TRUE) / sqrt(n()), 2),
-        be_neighbor_avg = round(mean(as.numeric(be_neighbor), na.rm = TRUE), 2),
-        be_neighbor_se = round(sd(as.numeric(be_neighbor), na.rm = TRUE) / sqrt(n()), 2),
+        therm_avg = round(mean(.data$therm, na.rm = TRUE), 2),
+        therm_se = round(sd(.data$therm, na.rm = TRUE) / sqrt(dplyr::n()), 2),
+        child_marry_avg = round(mean(as.numeric(.data$child_marry), na.rm = TRUE), 2),
+        child_marry_se = round(sd(as.numeric(.data$child_marry), na.rm = TRUE) / sqrt(dplyr::n()), 2),
+        be_neighbor_avg = round(mean(as.numeric(.data$be_neighbor), na.rm = TRUE), 2),
+        be_neighbor_se = round(sd(as.numeric(.data$be_neighbor), na.rm = TRUE) / sqrt(dplyr::n()), 2),
         n = dplyr::n()
       ) %>%
       as.data.frame()
