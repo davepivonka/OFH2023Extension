@@ -33,7 +33,7 @@ df_summary <- function(df_list) {
       summarize(
         # Change from original: Renamed 'ft' to 'therm' for parity with the dataset
         therm_avg = round(mean(.data$therm, na.rm = TRUE), 2),
-        therm_se = round(sd(.data$herm, na.rm = TRUE) / sqrt(n()), 2),
+        therm_se = round(sd(.data$therm, na.rm = TRUE) / sqrt(n()), 2),
         child_marry_avg = round(mean(as.numeric(.data$child_marry), na.rm = TRUE), 2),
         child_marry_se = round(sd(as.numeric(.data$child_marry), na.rm = TRUE) / sqrt(n()), 2),
         be_neighbor_avg = round(mean(as.numeric(.data$be_neighbor), na.rm = TRUE), 2),
