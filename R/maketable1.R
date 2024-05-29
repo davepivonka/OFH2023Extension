@@ -12,7 +12,6 @@
 #' @param note Character. Note to add to the table.
 #' @return Returns a LaTeX table.
 #' @examples
-#' example_code()
 #'
 #' @export
 maketable1 <- function(df, caption = NULL, label = NULL, pos = "tbp", split.var = NULL, custom.table.names = NULL, skip.table.names = FALSE, note = NULL) {
