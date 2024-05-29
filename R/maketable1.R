@@ -34,5 +34,5 @@ maketable1 <- function(df, caption = NULL, label = NULL, pos = "tbp", split.var 
   # 4.
   table1 <- generate_table1(summaries = df.summaries, diffs = df.diffs, split.var = split.var, caption = caption, label = label, pos = pos,skip.table.names = skip.table.names, custom.table.names = custom.table.names)
   # 5.
-  return(table1)
+  cat(table1)
 }

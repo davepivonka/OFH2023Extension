@@ -126,5 +126,5 @@ makedifftables <- function(df, tables.list = NULL, caption = "Policy Agreement v
     "\\textsuperscript{\\textdagger} ",p_stars("legend"),".}\n",
     "\\end{table}\n"
   )
-  return(diffstable)
+  cat(diffstable)
 }
