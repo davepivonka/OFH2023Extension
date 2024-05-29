@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Student", "Essex", , "first.last@example.com", role = c("aut", "cre"))
 Description: This package was made to automatically replicate Table 1 from Orr, Fowler and Huber (2023, https://doi.org/10.1111/ajps.12796). As an extension, the analysis on a specified variable to observe differences between sub-groups in a population. Only works on the dataset "Study 2" by Dias and Lelkes (2021), which was used for the analysis: https://doi.org/10.7910/DVN/JHJJW0.
-License: GPL (>= 3)
+License: GPL-3 | file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
