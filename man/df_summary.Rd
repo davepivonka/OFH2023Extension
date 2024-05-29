@@ -2,7 +2,7 @@
 % Please edit documentation in R/df_summary.R
 \name{df_summary}
 \alias{df_summary}
-\title{Averages and SEs summary of fata frames}
+\title{Averages and SEs summary of data frames}
 \usage{
 df_summary(df_list)
 }
@@ -17,5 +17,4 @@ Used in the replication and extension of Table 1 in Orr, Fowler and Huber (2023)
 }
 \examples{
 NULL
-
 }
