@@ -4,12 +4,12 @@
 \alias{split_dataframe}
 \title{Split a DF into two based on a specified variable}
 \usage{
-split_dataframe(df, split_var)
+split_dataframe(df, split.var)
 }
 \arguments{
 \item{df}{Data frame to split}
 
-\item{split_var}{String. Name of dummy variable that df should be split on}
+\item{split.var}{String. Name of dummy variable that df should be split on}
 }
 \value{
 Returns a list of two data frames + third item with the name of the split variable

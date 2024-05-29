@@ -3,7 +3,7 @@
 #' Used in calculations for [maketable1] and [makedifftables]. This step is not necessary when replicating the tables, but it is used for the extension to compare two different groups.
 #'
 #' @param df Data frame to split
-#' @param split_var String. Name of dummy variable that df should be split on
+#' @param split.var String. Name of dummy variable that df should be split on
 #' @return Returns a list of two data frames + third item with the name of the split variable
 #' @import dplyr
 #' @examples NULL
