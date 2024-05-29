@@ -9,6 +9,10 @@
 #' @param match_policy Value of 'match_policy' to search for.
 #' @return Returns the value in the table
 #'
+#' @import dplyr
+#'
+#' @examples NULL
+#'
 #' @export
 find.summ <- function(summ, var, match_party, policy_type, match_policy) {
   value <- summ[summ$`match_party` == match_party & summ$`match_policy` == match_policy & summ$`policy_type` == policy_type, var]

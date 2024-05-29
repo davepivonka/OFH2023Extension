@@ -13,6 +13,10 @@
 #' @param note Character. Note to add to the table
 #' @return Returns a LaTeX table
 #'
+#' @import dplyr
+#'
+#' @examples NULL
+#'
 #' @export
 generate_table1 <- function(summaries, diffs, caption = NULL, label = NULL, pos = "tbp", split.var = NULL, custom.table.names = NULL, skip.table.names = FALSE, note = NULL) {
 

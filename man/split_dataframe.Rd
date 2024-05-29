@@ -17,3 +17,7 @@ Returns a list of two data frames + third item with the name of the split variab
 \description{
 Used in calculations for \link{maketable1} and \link{makedifftables}. This step is not necessary when replicating the tables, but it is used for the extension to compare two different groups.
 }
+\examples{
+NULL
+
+}

@@ -38,3 +38,7 @@ Returns a LaTeX table.
 \description{
 Requires the booktabs LaTeX package. Allows both for identical replication, and extension of Table 1 from Orr, Fowler and Huber (2023). The function can be used to generate the table for the entire dataset, or for a split dataset based on a specified variable. This function combines \link{df_summary}, \link{extract_diffs}, and \link{generate_table1} and automatically ties them together.
 }
+\examples{
+NULL
+
+}

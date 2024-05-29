@@ -5,7 +5,8 @@
 #' @param df Data frame to split
 #' @param split_var String. Name of dummy variable that df should be split on
 #' @return Returns a list of two data frames + third item with the name of the split variable
-#' @examples
+#' @import dplyr
+#' @examples NULL
 #'
 #' @export
 split_dataframe <- function(df, split_var) {

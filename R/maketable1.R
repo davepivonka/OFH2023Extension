@@ -11,7 +11,9 @@
 #' @param skip.table.names Logical. Skip the table names.
 #' @param note Character. Note to add to the table.
 #' @return Returns a LaTeX table.
-#' @examples
+#' @examples NULL
+#'
+#' @import dplyr
 #'
 #' @export
 maketable1 <- function(df, caption = NULL, label = NULL, pos = "tbp", split.var = NULL, custom.table.names = NULL, skip.table.names = FALSE, note = NULL) {

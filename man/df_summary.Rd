@@ -15,3 +15,7 @@ Returns a list of data frames, one DF for each of the ones in the input list. Ma
 \description{
 Used in the replication and extension of Table 1 in Orr, Fowler and Huber (2023). Outputs summary data frames with averages and SEs grouped in the same way as in the paper.
 }
+\examples{
+NULL
+
+}

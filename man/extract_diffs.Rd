@@ -15,3 +15,7 @@ Returns a list of coefficients, SEs and p-values for each of the variables in th
 \description{
 Takes a data frame or a list of data frames (created by \link{split_dataframe}), and returns a list of coefficients (difference between the averages), the SEs and p-values, used to assess statistical significance of the differences between groups.
 }
+\examples{
+NULL
+
+}

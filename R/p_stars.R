@@ -6,6 +6,8 @@
 #' , the function outputs the threshold for the number of stars.
 #' @param stars Vector. Sets the thresholds for the stars. Default is 0.001 for 3 stars, 0.01 for 2, 0.05 for 1.
 #' @return Returns either full legend for tables, number of stars, or a specific threshold for a number of stars.
+#' @import dplyr
+#'
 #' @examples
 #' p_stars(0.001)
 #' p_stars("**")

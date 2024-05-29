@@ -4,6 +4,8 @@
 #'
 #' @param df_list Data Frame or list of data frames. If data frame, it will be placed into a list.
 #' @return Returns a list of data frames, one DF for each of the ones in the input list. Made to work with output from [split_dataframe].
+#' @import dplyr
+#' @examples NULL
 #'
 #' @export
 df_summary <- function(df_list) {

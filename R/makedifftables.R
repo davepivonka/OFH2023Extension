@@ -4,7 +4,15 @@
 #'
 #' @param df Data frame
 #' @param tables.list List containing information about the tables. The structure is: list( list( split.var = "", table.name = "", values = list("Value in "DF = "Display Value")),list(...))). So it is a list of list with information about what we want to do and what the final table should look like. None of the values are required, but allow significantly better output.
+#' @param caption Character. Caption for the table
+#' @param label Character. Label for the table
+#' @param pos Character. Position of the table
+#' @param skip.table.names Logical. Skip the table names
+#' @param note Character. Note to add to the table
 #' @return Returns a LaTeX table.
+#' @examples NULL
+#'
+#' @import dplyr
 #'
 #' @export
 makedifftables <- function(df, tables.list = NULL, caption = "Policy Agreement vs Party Loyalty by Variable", label = "tab:allTables", pos = "!htbp", skip.table.names = FALSE, note = NULL) {

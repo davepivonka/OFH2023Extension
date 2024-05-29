@@ -18,10 +18,24 @@ makedifftables(
 \item{df}{Data frame}
 
 \item{tables.list}{List containing information about the tables. The structure is: list( list( split.var = "", table.name = "", values = list("Value in "DF = "Display Value")),list(...))). So it is a list of list with information about what we want to do and what the final table should look like. None of the values are required, but allow significantly better output.}
+
+\item{caption}{Character. Caption for the table}
+
+\item{label}{Character. Label for the table}
+
+\item{pos}{Character. Position of the table}
+
+\item{skip.table.names}{Logical. Skip the table names}
+
+\item{note}{Character. Note to add to the table}
 }
 \value{
 Returns a LaTeX table.
 }
 \description{
 Combines multiple tables from \link{maketable1} into one - but it only contains the differences and their statistical significance, which are the most important part of Table 1 in Orr, Fowler and Huber (2023). This function uses \link{extract_diffs} and \link{split_dataframe} to generate the differences between two groups of respondents in the data set.
+}
+\examples{
+NULL
+
 }

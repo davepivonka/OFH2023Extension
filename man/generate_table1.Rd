@@ -41,3 +41,7 @@ Returns a LaTeX table
 \description{
 Generates a LaTeX table based on Table 1 in Orr, Fowler and Huber (2023) or an extension of it. The table is based on the output from \link{df_summary} and \link{extract_diffs}. This function is a part of the \link{maketable1} function.
 }
+\examples{
+NULL
+
+}

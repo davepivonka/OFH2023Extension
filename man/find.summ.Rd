@@ -23,3 +23,7 @@ Returns the value in the table
 \description{
 Searches the output of \link{df_summary} for a specific value. Used in \link{maketable1}. This function was only made to save space in the main script.
 }
+\examples{
+NULL
+
+}
