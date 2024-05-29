@@ -5,6 +5,7 @@
 #' @param df_list Data frame or list of data frames. If data frame, it will be placed into a list and the output will be identical to that in the article by Orr, Fowler and Huber (2023).
 #' @return Returns a list of coefficients, SEs and p-values for each of the variables in the data frames. These are grouped based on whether the respondent is evaluating a copartisan or an out-partisan.
 #' @import dplyr
+#' @importFrom stats sd lm
 #' @examples NULL
 #'
 #' @export
