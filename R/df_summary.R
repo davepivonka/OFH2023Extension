@@ -14,10 +14,10 @@ df_summary <- function(df_list) {
 
   # Makes it work even with DFs by turning them into lists
   input_list <- list()
-  if (inherits(df_list, "data.frame")) {
+  if (is.data.frame(df_list)) {
     inputname <- deparse(substitute(df_list))
     input_list[[inputname]] <- df_list
-  } else if (inherits(df_list, "list")) {
+  } else if (is.list(df_list)) {
     input_list <- df_list
   } else {
     stop("Input must be a data frame or a list of data frames.")

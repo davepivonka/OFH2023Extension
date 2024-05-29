@@ -15,10 +15,10 @@ extract_diffs <- function(df_list) {
   model.vars = c("therm", "child_marry", "be_neighbor")
   match_values <- c("Yes", "No")
   # Makes it work even with DFs by turning them into lists
-  if (class(df_list) == "data.frame") {
+  if (is.data.frame(df_list)) {
     inputname <- deparse(substitute(df_list))
     input_list[[inputname]] <- df_list
-  } else if (class(df_list) == "list") {
+  } else if (is.list(df_list)) {
     input_list <- df_list
   }
   else {
